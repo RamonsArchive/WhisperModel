@@ -32,8 +32,8 @@ def main():
     results_dir = os.path.join(current_dir, "..", "results")
 
 
-    model = whisper.load_model(audio_path)
-    result = model.transcribe("")
+    model = whisper.load_model("turbo")
+    result = model.transcribe(audio_path)
     store_full_transcript(result["text"], results_dir)
     store_segment_csv(result["segments"], results_dir)
 
