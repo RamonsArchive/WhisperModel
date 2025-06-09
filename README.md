@@ -11,6 +11,7 @@ WhisperModel/
 │   └── [transcription scripts]
 ├── assets/                # Input files directory
 │   └── [audio files]
+    └── original_text.txt  # Original transcript 
 └── results/              # Output directory
     ├── full_transcript.txt    # Complete transcription text
     └── transcription.csv      # Timestamped segments with metadata
@@ -124,6 +125,7 @@ Whisper supports various audio formats:
 ## Output Analysis
 
 ### Full Transcript
+- Correct transcription of the orignal text
 - Complete text output suitable for reading
 - Preserves natural flow and punctuation
 - Ideal for content review and analysis
